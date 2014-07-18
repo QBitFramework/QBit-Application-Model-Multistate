@@ -105,29 +105,29 @@ sub multistates_graph {
 }
 
 sub get_empty_name {
-    my $name = package_stash(ref(shift))->{'__EMPTY_NAME__'};
+    my $name = package_stash(ref($_[0]) || $_[0])->{'__EMPTY_NAME__'};
 
     return ref($name) eq 'CODE' ? $name->() : $name;
 }
 
 sub get_multistates {
-    return package_stash(ref(shift))->{'__MULTISTATES__'};
+    return package_stash(ref($_[0]) || $_[0])->{'__MULTISTATES__'};
 }
 
 sub get_multistates_bits {
-    return package_stash(ref(shift))->{'__BITS__'};
+    return package_stash(ref($_[0]) || $_[0])->{'__BITS__'};
 }
 
 sub get_multistates_bits_hs {
-    return package_stash(ref(shift))->{'__BITS_HS__'};
+    return package_stash(ref($_[0]) || $_[0])->{'__BITS_HS__'};
 }
 
 sub get_registered_actions {
-    return package_stash(ref(shift))->{'__ACTIONS__'};
+    return package_stash(ref($_[0]) || $_[0])->{'__ACTIONS__'};
 }
 
 sub get_registered_actions_rights {
-    return package_stash(ref(shift))->{'__RIGHT_ACTIONS__'};
+    return package_stash(ref($_[0]) || $_[0])->{'__RIGHT_ACTIONS__'};
 }
 
 sub get_multistate_name {
