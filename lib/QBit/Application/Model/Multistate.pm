@@ -301,3 +301,33 @@ sub __filter_multistates {
 }
 
 TRUE;
+
+__END__
+
+=encoding utf8
+
+=head1 Name
+ 
+QBit::Application::Model::Multistate - Class for working with multistates.
+ 
+=head1 GitHub
+
+https://github.com/QBitFramework/QBit-Application-Model-Multistate
+
+=head1 Install
+
+=over
+ 
+=item *
+
+cpanm QBit::Application::Model::Multistate
+
+=item *
+
+apt-get install libqbit-application-model-multistate-perl (http://perlhub.ru/)
+
+=back
+
+For more information. please, see code.
+
+=cut
