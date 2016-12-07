@@ -1,11 +1,10 @@
-package Exception::Multistate;
-use base qw(Exception);
-
 package QBit::Application::Model::Multistate;
 
 use qbit;
 
 use base qw(QBit::Application::Model);
+
+use Exception::Multistate;
 
 use QBit::GraphViz;
 
