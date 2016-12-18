@@ -18,4 +18,4 @@ requires:
   QBit::GraphViz: 0
   base: 0
   qbit: 0
-version: 0.007
+version: 0.008
